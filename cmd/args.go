@@ -6,9 +6,10 @@ import (
 	"path/filepath"
 	"regexp"
 
+	"github.com/takoha-cpp/cf-tool/client"
+	"github.com/takoha-cpp/cf-tool/config"
+
 	"github.com/docopt/docopt-go"
-	"github.com/xalanq/cf-tool/client"
-	"github.com/xalanq/cf-tool/config"
 )
 
 // ParsedArgs parsed arguments

@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/xalanq/cf-tool/util"
+	"github.com/takoha-cpp/cf-tool/util"
 
 	"github.com/fatih/color"
 )
