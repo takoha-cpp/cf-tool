@@ -119,17 +119,10 @@ func parseArgs(opts docopt.Opts) error {
 		info.ContestID = "99999"
 	}
 	root := cfg.FolderName["root"]
-	info.RootPath = filepath.Join(path, root)
-	for {
-		base := filepath.Base(path)
-		if base == root {
-			info.RootPath = path
-			break
-		}
-		if filepath.Dir(path) == path {
-			break
-		}
-		path = filepath.Dir(path)
+	if filepath.IsAbs(root) {
+		info.RootPath = root
+	} else {
+		info.RootPath = filepath.Join(path, root)
 	}
 	info.RootPath = filepath.Join(info.RootPath, cfg.FolderName[info.ProblemType])
 	Args.Info = info
