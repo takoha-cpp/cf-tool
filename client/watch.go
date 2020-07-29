@@ -312,5 +312,5 @@ var colorMap = map[string]color.Attribute{
 	"${c-waiting}":  color.FgWhite,
 	"${c-failed}":   color.FgRed,
 	"${c-accepted}": color.FgGreen,
-	"${c-rejected}": color.FgBlue,
+	"${c-rejected}": color.FgRed,
 }
